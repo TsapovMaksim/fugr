@@ -1,0 +1,27 @@
+.users-table {
+  $self: &;
+  &__sort-row {
+    #{$self}__td {
+      background-color: #bcebdd;
+      color: white;
+      width: 220px;
+      text-shadow: 0 1px 1px #2d2020;
+      padding: 10px 20px;
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: white;
+      &:last-child {
+        border-right: none;
+      }
+      &.active {
+        background-color: grey;
+      }
+      span {
+        display: block;
+        &:nth-child(2) {
+          background-color: #3c10106e;
+        }
+      }
+    }
+  }
+}

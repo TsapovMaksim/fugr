@@ -1,0 +1,41 @@
+.add-user {
+  background-color: grey;
+  position: relative;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__content {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__open-form {
+    display: inline-block;
+  }
+  &__form-container {
+    transition: 0.5s;
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 300px;
+    transform: scale(0);
+    &.active {
+      transform: scale(1);
+    }
+  }
+  &__form-block {
+    margin: 0 auto;
+    width: 207px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+  &__form-input {
+    padding: 5px;
+  }
+  &__form-error {
+    color: red;
+  }
+}
